@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>🛡️ BrevetChain - Dépôt de Brevet Décentralisé</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ BrevetChain</h1>
+            <p>Protégez votre idée en quelques clics. IA + Blockchain = Simplicité & Sécurité.</p>
+        </header>
+
+        <!-- Étape 1 : Informations personnelles -->
+        <section id="step1" class="step active">
+            <h2>1. Vos informations</h2>
+            <form id="userForm">
+                <label>Nom complet *</label>
+                <input type="text" id="fullName" required>
+
+                <label>Email *</label>
+                <input type="email" id="email" required>
+
+                <label>Pays</label>
+                <input type="text" id="country">
+
+                <label>Numéro de téléphone</label>
+                <input type="tel" id="phone">
+
+                <label>Adresse wallet Hedera (optionnel)</label>
+                <input type="text" id="walletAddress" placeholder="0.0.123456">
+
+                <button type="button" onclick="nextStep(2)">Continuer</button>
+            </form>
+        </section>
+
+        <!-- Étape 2 : Description de l'idée -->
+        <section id="step2" class="step">
+            <h2>2. Décrivez votre invention</h2>
+            <p>Expliquez simplement votre idée. L'IA va la structurer en brevet.</p>
+            <textarea
+                id="idea"
+                placeholder="Ex : Une tasse qui garde le café chaud plus longtemps..."
+                rows="6"
+                required
+            ></textarea>
+            <div class="buttons">
+                <button type="button" onclick="prevStep(1)">Retour</button>
+                <button type="button" onclick="submitIdea()">Soumettre sur la Blockchain</button>
+            </div>
+        </section>
+
+        <!-- Étape 3 : Brevet structuré -->
+        <section id="step3" class="step">
+            <h2>3. Votre brevet (généré par IA)</h2>
+            <div id="patentPreview" class="patent-preview">
+                <!-- Rempli par JavaScript -->
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="prevStep(2)">Modifier</button>
+                <button type="button" onclick="downloadPDF()">Télécharger en PDF</button>
+            </div>
+        </section>
+
+        <!-- Réponse finale -->
+        <div id="response" class="response"></div>
+    </div>
+
+    <!-- jspdf pour générer le PDF -->
+    <script src="js/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
