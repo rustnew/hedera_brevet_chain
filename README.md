@@ -1,7 +1,3 @@
-Voici un condensé clair, élégant et accessible pour ton fichier `README.md` sur GitHub, incluant le logo et une présentation complète du projet **BrevetChain Hedera** :
-
----
-
 # **BrevetChain Hedera** 🚀
 
 ![BrevetChain Hedera Logo](URL_DU_LOGO)
