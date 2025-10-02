@@ -12,7 +12,7 @@ BrevetChain Hedera vise à **démocratiser le dépôt de brevets** en offrant un
 
 ---
 
-## **Problématique** ⚠️
+## **Problématique** ⚠️ 
 
 Le dépôt de brevets est aujourd'hui :
 - **Coûteux** : Les frais d’avocats et de dépôt peuvent atteindre des milliers d’euros.
