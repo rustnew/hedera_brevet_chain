@@ -23,7 +23,7 @@ Le dépôt de brevets est aujourd'hui :
 Pour les personnes peu instruites, les défis incluent :
 - La difficulté à comprendre les exigences légales et techniques.
 - Le manque d’accès à des experts pour rédiger ou analyser les documents.
-- La méfiance envers les intermédiaires ou la peur de voir leurs idées volées.
+- La méfiance envers les intermédiaires ou la peur de voir leurs idées volées. 
 
 ---
 
